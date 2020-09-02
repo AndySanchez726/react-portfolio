@@ -4,6 +4,7 @@ function About () {
     return(
         <section>
         <h2>About Me </h2>
+        <p>lorem ipsum</p>
         </section>
     )
 }

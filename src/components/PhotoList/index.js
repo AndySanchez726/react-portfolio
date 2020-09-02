@@ -1,36 +1,35 @@
-import React, { useState } from 'react';
-import { Card, Container, Row, Col, Image } from 'react-bootstrap'
+import React, { useState }  from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap'
 
 
 const PhotoList = ({ category }) => {
-  const [currentPhoto, setCurrentPhoto] = useState();
 
   const [photos] = useState([
     {
-      name: 'Horiseon',
+      name: 'Whiskey Inventory',
       category: 'projects',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Run Buddy',
-      category: 'projects',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      link: 'https://whiskey-inventory.herokuapp.com/'
     },
     {
       name: 'Tasty Events',
       category: 'projects',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      link: 'https://andysanchez726.github.io/Project-1/'
     },
     {
-      name: 'Whiskey Inventory',
+      name: 'Run Buddy',
       category: 'projects',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      link: 'https://andysanchez726.github.io/run-buddy/'
+    },
+    {
+      name: 'Horiseon',
+      category: 'projects',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      link: 'https://andysanchez726.github.io/Week-1-Challenge-Horiseon/'
     }
   ]);
-
-
-  // const currentPhotos = photos.filter((photo) => photo.category === category);
-
 
 
   return (
@@ -40,13 +39,15 @@ const PhotoList = ({ category }) => {
         <Row>
         {photos.map((project, i) => (
           <Col md={4} className='projects'>
-            <h1 className='text-center'>{project.name}</h1>
-            <Image
-              src={require(`../../assets/${category}/${i}.png`)}
-              alt={project.name}
-              className="img-thumbnail mx-1"
-              key={project.name}
-            />
+            <h5 className='text-center'>{project.name}</h5>
+            <a href={project.link} target='_blank'>
+              <Image
+                src={require(`../../assets/projects/${i}.png`)}
+                alt={project.name}
+                className="project-image"
+                key={project.name}
+              />
+            </a>
           </Col>
         ))}
         </Row>
