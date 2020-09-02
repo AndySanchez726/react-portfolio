@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import About from './components/About Me'
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import PhotoList from './components/PhotoList';
+import ProjectList from './components/ProjectList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -21,16 +21,13 @@ function App() {
 
   return (
     <div>
-      <Nav
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
       <main>
         <div>
           <Header />
           <About />
-          <PhotoList />
+          <ProjectList />
           <Contact />
+          <Footer />
         </div>
       </main>
     </div>

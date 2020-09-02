@@ -41,3 +41,7 @@ height: 50%;
 object-fit: cover;
 object-position: top;
 }
+
+nav a {
+  color: black;
+}
