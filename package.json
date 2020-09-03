@@ -1,5 +1,4 @@
 {
-  "homepage": "http://andysanchez726.github.io/react-portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +12,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3"
   },
+  "homepage": "http://andysanchez726.github.io/react-portfolio",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
