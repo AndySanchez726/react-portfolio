@@ -3,6 +3,7 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Description
 This is my personal portfolio which displays information about me, my projects, and how to contact me.
+[Portfolio](https://andysanchez726.github.io/react-portfolio/)
 
 ![screenshot](./src/assets/portfolio-screenshot.png)
 ## Table of Contents
