@@ -20,6 +20,13 @@ const ProjectList = ({ category }) => {
       github: 'https://github.com/AndySanchez726/Project-1'
     },
     {
+      name: 'Frame It',
+      category: 'projects',
+      description: 'Lorem ipsum',
+      link: 'https://cryptic-peak-35227.herokuapp.com/',
+      github: 'https://github.com/saul10huerta/frame-it'
+    },
+    {
       name: 'Run Buddy',
       category: 'projects',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
