@@ -16,8 +16,8 @@ const ProjectList = ({ category }) => {
       name: 'Tasty Events',
       category: 'projects',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      link: 'https://andysanchez726.github.io/Project-1/',
-      github: 'https://github.com/AndySanchez726/Project-1'
+      link: 'https://andysanchez726.github.io/Tasty-Events/',
+      github: 'https://github.com/AndySanchez726/Tasty-Events'
     },
     {
       name: 'Frame It',
@@ -50,18 +50,20 @@ const ProjectList = ({ category }) => {
         <Row>
         {photos.map((project, i) => (
           <Col md={4} className='projects'>
-            <h5 className='text-center'>{project.name}</h5>
-            <a href={project.link} target='_blank'>
-              <Image
-                src={require(`../../assets/projects/${i}.png`)}
-                alt={project.name}
-                className="project-image"
-                key={project.name}
-              />
-            </a>
-            <a href={project.github} target='_blank'>
-              <h6 className='m-3 text-dark'>Repository</h6>
-            </a>
+          <div className='single-project'>
+              <h5 className='text-center'>{project.name}</h5>
+              <a href={project.link} target='_blank'>
+                <Image
+                  src={require(`../../assets/projects/${i}.png`)}
+                  alt={project.name}
+                  className="project-image"
+                  key={project.name}
+                />
+              </a>
+              <a href={project.github} target='_blank'>
+                <h6 className='m-3'>Repository</h6>
+              </a>
+            </div>
           </Col>
           
         ))}

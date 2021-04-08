@@ -4,8 +4,7 @@ import Nav from '../Nav'
 function Header () {
     return (
         <div>
-            <h1>Andy Sanchez</h1>
-            <Nav />
+            <h1 className='headers'>Andy Sanchez</h1>
         </div>
     )
 }

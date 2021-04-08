@@ -14,21 +14,46 @@ function App() {
   //     description: 'Photos of grocery stores, food trucks, and other commercial projects',
   //   }
   // ]);
-  const[contactSelected, setContactSelected] = useState(false);
+  const[showSelected, setShowSelected] = useState(false);
+  // const showSelected = {showSelected}
+  console.log({showSelected})
+
 
   // const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+ 
 
 
   return (
     <div>
+      <Header />
+      <Nav 
+        showSelected={showSelected}
+        setShowSelected={setShowSelected}
+      />
       <main>
+
         <div>
-          <Header />
-          <About />
-          <ProjectList />
-          <Contact />
+          {!showSelected ? (
+            <>
+              <About />
+              <ProjectList />
+            </>
+          ) : (
+            <Contact />
+          )}
           <Footer />
         </div>
+        {/* <div>
+          switch (showSelected) {
+            case 'About':
+              <About />
+              break;
+          
+            default:
+              break;
+          }
+        </div> */}
       </main>
     </div>
 
