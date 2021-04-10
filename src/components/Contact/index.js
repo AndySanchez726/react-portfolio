@@ -6,6 +6,8 @@ function ContactForm() {
     const { name, email, message } = formState
     const [errorMessage, setErrorMessage] = useState('');
 
+
+
     function handleChange(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);

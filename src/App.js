@@ -16,7 +16,8 @@ function App() {
   // ]);
   const[showSelected, setShowSelected] = useState(false);
   // const showSelected = {showSelected}
-  console.log({showSelected})
+  console.log({showSelected});
+
 
 
   // const [currentCategory, setCurrentCategory] = useState(categories[0]);

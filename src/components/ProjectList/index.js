@@ -20,6 +20,12 @@ const ProjectList = ({ category }) => {
       github: 'https://github.com/AndySanchez726/Tasty-Events'
     },
     {
+      name: 'Fretboard Scale App',
+      category: 'projects',
+      link: 'https://andysanchez726.github.io/fretboard-scale-app/',
+      github: 'https://github.com/AndySanchez726/fretboard-scale-app'
+    },
+    {
       name: 'Frame It',
       category: 'projects',
       description: 'Lorem ipsum',
@@ -39,7 +45,7 @@ const ProjectList = ({ category }) => {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
       link: 'https://andysanchez726.github.io/Week-1-Challenge-Horiseon/',
       github: 'https://github.com/AndySanchez726/Week-1-Challenge-Horiseon'
-    }
+    },
   ]);
 
 
