@@ -6,24 +6,22 @@ function Nav(props) {
     showSelected,
     setShowSelected
     } = props;
-    // const [showSelected, setShowSelected] = useState(false)
-    // const onClick = () => setShowSelected(true)
-
+    
     return (
         <nav>
             <ul className='flex-row'>
                 <li className='mx-2'>
-                    <a href='#about' onClick={() => setShowSelected(false)}>
-                        About Me
+                    <a href='#about' onClick={() => setShowSelected({about:true})}>
+                        About
                     </a>
                 </li>
                 <li>
-                    <a href='#projects' onClick={() => setShowSelected(false)}>
+                    <a href='#projects' onClick={() => setShowSelected({projects:true})}>
                         Projects
                     </a>
                 </li>                
                 <li>
-                    <a href='#contact' onClick={() => setShowSelected(false)}>
+                    <a href='#contact'onClick={() => setShowSelected({contact:true})}>
                         Contact
                     </a>
                 </li>
@@ -32,3 +30,5 @@ function Nav(props) {
     )
 }
 export default Nav
+
+// onClick={() => setShowSelected(true)

@@ -7,54 +7,24 @@ import Contact from './components/Contact';
 import ProjectList from './components/ProjectList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
-  // const [categories] = useState([
-  //   {
-  //     name: 'projects',
-  //     description: 'Photos of grocery stores, food trucks, and other commercial projects',
-  //   }
-  // ]);
-  const[showSelected, setShowSelected] = useState(false);
-  // const showSelected = {showSelected}
-  console.log({showSelected});
-
-
-
-  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
- 
-
+  const[showSelected, setShowSelected] = useState({about: false, projects: false, contact: false});
 
   return (
     <div>
       <Header />
       <Nav 
-        showSelected={showSelected}
-        setShowSelected={setShowSelected}
+      showSelected = {showSelected}
+      setShowSelected = {setShowSelected}
       />
       <main>
-
         <div>
-          {!showSelected ? (
-            <>
-              <About />
-              <ProjectList />
-            </>
-          ) : (
-            <Contact />
-          )}
+          {showSelected.about ? <About/> : null}
+          {showSelected.projects ? <ProjectList/> : null}
+          {showSelected.contact ? <Contact/> : null}
           <Footer />
         </div>
-        {/* <div>
-          switch (showSelected) {
-            case 'About':
-              <About />
-              break;
-          
-            default:
-              break;
-          }
-        </div> */}
       </main>
     </div>
 
