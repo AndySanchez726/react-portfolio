@@ -3,9 +3,9 @@ import Nav from '../Nav'
 
 function Header () {
     return (
-        <div>
+        <header id='header'>
             <h1 className='headers'>Andy Sanchez</h1>
-        </div>
+        </header>
     )
 }
 

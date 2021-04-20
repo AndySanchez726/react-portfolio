@@ -6,17 +6,32 @@ function Nav(props) {
     showSelected,
     setShowSelected
     } = props;
-    
+
+    // function onClick(e) {
+    //     e.preventDefault();
+    //     setShowSelected({projects:true})
+    //     var url = 'http://localhost:3000/'
+    //     var next = 'project'
+    //     console.log(url)
+    //     window.history.pushState(next, '', url + next)
+    //     return false
+    // }
+
     return (
-        <nav>
+        <nav id='nav'>
             <ul className='flex-row'>
+                <li className='mx-2'>
+                    <a href='#home' onClick={() => setShowSelected({home:true})}>
+                        Home
+                    </a>
+                </li>
                 <li className='mx-2'>
                     <a href='#about' onClick={() => setShowSelected({about:true})}>
                         About
                     </a>
                 </li>
                 <li>
-                    <a href='#projects' onClick={() => setShowSelected({projects:true})}>
+                    <a href='#project' onClick={() => setShowSelected({projects:true})}>
                         Projects
                     </a>
                 </li>                
@@ -31,4 +46,3 @@ function Nav(props) {
 }
 export default Nav
 
-// onClick={() => setShowSelected(true)

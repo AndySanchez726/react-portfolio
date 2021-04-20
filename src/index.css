@@ -71,3 +71,10 @@ nav a:hover, nav a:focus, nav a:active {
 .darkgrey {
   color: var(--darkgrey);
 }
+
+#footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

@@ -3,7 +3,7 @@ import Github from '../../assets/Github_120px.png';
 
 function Footer() {
     return (
-        <footer className='m-5'>
+        <footer id='footer' className='m-5'>
             <a href='https://github.com/AndySanchez726' target='_blank' rel='noopener noreferrer'>
                 <img src={Github} alt='GitHub Profile' width='7%'/>
             </a>

@@ -9,23 +9,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const[showSelected, setShowSelected] = useState({about: false, projects: false, contact: false});
-
+  const[showSelected, setShowSelected] = useState({home: false, about: false, projects: false, contact: false});
+  console.log(showSelected)
   return (
     <div>
-      <Header />
-      <Nav 
+      <div id='headerNav'>
+      <Header id='header' />
+      <Nav
       showSelected = {showSelected}
       setShowSelected = {setShowSelected}
       />
+      </div>
       <main>
         <div>
+          {showSelected.home ? <About/> : null}
           {showSelected.about ? <About/> : null}
           {showSelected.projects ? <ProjectList/> : null}
           {showSelected.contact ? <Contact/> : null}
-          <Footer />
         </div>
       </main>
+      <Footer/>
+
     </div>
 
   );
