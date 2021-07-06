@@ -52,11 +52,24 @@ object-position: top;
   -webkit-transition: all 500ms;
 }
 
-/* .me {
-  height: auto;
-  max-width: 100%;
+/* Home */
+.me {
+  max-width: 40%;
+  margin: 20px
+}
+#homeBio {
+  margin: 20px;
+}
+
+/* About Me */
+.me2 {
+  max-width: 40%;
   float: left;
-} */
+  margin: 20px;
+}
+#aboutBio {
+  margin: 20px;
+}
 
 
 /* Nav */
@@ -79,7 +92,7 @@ nav a:hover, nav a:focus, nav a:active {
   color: var(--darkgrey);
 }
 
-t
+/* Footer */
 #footer {
   clear: both;
   position: relative;

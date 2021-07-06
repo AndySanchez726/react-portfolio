@@ -27,7 +27,7 @@ function Home (props) {
             alt="Picture of me"
             className="me"
             />
-            <p className='darkgrey'>Hey there! I'm Andy and a Full Stack Developer in Austin, Tx. I'm a recent gradute of The Coding Bootcamp at UT Austin. When I'm not working on my craft I'm working on my other craft, music. I've been a musician and working with audio for over 10 years. </p>
+            <p id="homeBio" className='darkgrey'>Lorem adipisicing nisi nisi ut nostrud commodo. Nisi deserunt quis nulla non do aliquip sit. Et consequat sit reprehenderit exercitation cillum cupidatat sunt aliqua ex esse magna proident occaecat. Nulla nisi voluptate pariatur esse veniam nisi sunt mollit nostrud. Mollit proident aliqua cillum ea Lorem cupidatat Lorem quis et fugiat ipsum id. Quis officia laborum mollit qui proident id Lorem aute duis. Incididunt quis Lorem exercitation sint id quis exercitation incididunt elit exercitation excepteur ut non.</p>
         </section>
 
         </CSSTransition>
