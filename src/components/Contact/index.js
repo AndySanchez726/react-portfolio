@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { Transition, CSSTransition } from 'react-transition-group';
 
-function ContactForm() {
+
+function ContactForm(props) {
     const [formState, setFormState] = useState({ name: '', email: '', message: ''});
     const { name, email, message } = formState
     const [errorMessage, setErrorMessage] = useState('');
+    const {
+        inProp,
+        setInProp
+    } = props
+
 
 
 
@@ -35,7 +42,16 @@ function ContactForm() {
     }
 
     return (
-        <section id='contact' className='darkgrey'>
+        <CSSTransition 
+          in={inProp}
+          timeout={2000}
+          classNames='fade'
+          appear
+          exit
+          unmountOnExit
+        >
+
+        <section id='contact' className='darkgrey m-5'>
             <h1 className='headers'>Contact me</h1>
             {/* <form id='contact-form' onSubmit={handleSubmit}>
             <div>
@@ -61,6 +77,7 @@ function ContactForm() {
             <p>AndySanchez726@gmail.com</p>
             <p>254.214.4667</p>
         </section>
+        </CSSTransition>
     )
 }
 

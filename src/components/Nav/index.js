@@ -4,8 +4,11 @@ import React, {useState} from 'react';
 function Nav(props) {
     const {
     showSelected,
-    setShowSelected
+    setShowSelected,
+    inProp,
+    setInProp
     } = props;
+
 
     // function onClick(e) {
     //     e.preventDefault();
@@ -16,27 +19,44 @@ function Nav(props) {
     //     window.history.pushState(next, '', url + next)
     //     return false
     // }
+    function homeState() {
+        setInProp(true);
+        setShowSelected({home:true});
+    }
+    function aboutState() {
+        setInProp(true);
+        setShowSelected({about:true});
+    }
+    function contactState() {
+        setInProp(true);
+        setShowSelected({contact:true});
+    }
+    function projectState() {
+        setInProp(true);
+        setShowSelected({projects:true})
+    }
+
 
     return (
         <nav id='nav'>
             <ul className='flex-row'>
                 <li className='mx-2'>
-                    <a href='#home' onClick={() => setShowSelected({home:true})}>
+                    <a href='#home' onClick={() => homeState()}>
                         Home
                     </a>
                 </li>
                 <li className='mx-2'>
-                    <a href='#about' onClick={() => setShowSelected({about:true})}>
+                    <a href='#about' onClick={() => aboutState() }>
                         About
                     </a>
                 </li>
                 <li>
-                    <a href='#project' onClick={() => setShowSelected({projects:true})}>
+                    <a href='#project' onClick={() => projectState()}>
                         Projects
                     </a>
                 </li>                
                 <li>
-                    <a href='#contact'onClick={() => setShowSelected({contact:true})}>
+                    <a href='#contact'onClick={() => contactState()}>
                         Contact
                     </a>
                 </li>
