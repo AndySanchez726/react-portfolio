@@ -55,11 +55,11 @@ function Nav(props) {
                         Projects
                     </a>
                 </li>                
-                <li>
+                {/* <li>
                     <a href='#contact'onClick={() => contactState()}>
                         Contact
                     </a>
-                </li>
+                </li> */}
             </ul>
         </nav>
     )

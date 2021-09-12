@@ -31,20 +31,20 @@ const ProjectList = (props) => {
       github: 'https://github.com/AndySanchez726/Tasty-Events'
     },
     {
-      name: 'Fretboard Scale App',
+      name: 'Fretboard Scale App - WIP',
       category: 'projects',
       position: 'Full Stack',
       link: 'https://andysanchez726.github.io/fretboard-scale-app/',
       github: 'https://github.com/AndySanchez726/fretboard-scale-app'
     },
-    {
-      name: 'Frame It',
-      category: 'projects',
-      position: 'Full Stack',
-      description: 'Lorem ipsum',
-      link: 'https://cryptic-peak-35227.herokuapp.com/',
-      github: 'https://github.com/saul10huerta/frame-it'
-    },
+    // {
+    //   name: 'Frame It',
+    //   category: 'projects',
+    //   position: 'Full Stack',
+    //   description: 'Lorem ipsum',
+    //   link: 'https://cryptic-peak-35227.herokuapp.com/',
+    //   github: 'https://github.com/saul10huerta/frame-it'
+    // },
     {
       name: 'Run Buddy',
       category: 'projects',
@@ -74,6 +74,8 @@ const ProjectList = (props) => {
           unmountOnExit
         >
       <div>
+        <h2 className='headers' id='about'>Projects </h2>
+
         <Container fluid id='projects'>
           <Row>
           {photos.map((project, i) => (

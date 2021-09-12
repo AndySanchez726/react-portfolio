@@ -54,13 +54,13 @@ function App() {
             : null
           }
 
-          {showSelected.contact ? 
+          {/* {showSelected.contact ? 
             <Contact
               inProp={inProp}
               setInProp={setInProp}
             />
             : null
-          }
+          } */}
         </div>
       </main>
       <Footer/>

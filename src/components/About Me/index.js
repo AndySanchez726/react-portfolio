@@ -22,14 +22,22 @@ function About (props) {
 
         <section className='m-5' >
             <h2 className='headers' id='about'>About Me </h2>
-            <Image
-                src="https://via.placeholder.com/720x1080"
-                alt="About Me"
-                className="me2"
+            <Image 
+                src={require(`../../assets/family.png`)}
+                alt ='Family'
+                className='family'
             />
-            <p id="aboutBio" className='darkgrey'>Quis proident ut cillum dolor exercitation officia exercitation tempor laborum aute commodo exercitation non. Labore consequat cillum sunt non tempor officia labore aute ex tempor duis officia culpa. Minim aliqua aliquip officia ex sit velit. Dolore consequat dolore consectetur labore consectetur consequat irure laborum proident irure enim cillum. Sint anim commodo mollit exercitation esse excepteur laborum sint. Non ex proident qui excepteur sunt ea elit nostrud culpa. Sunt magna dolore culpa pariatur occaecat proident Lorem est excepteur amet. Pariatur amet incididunt magna mollit velit qui sunt pariatur qui excepteur sint reprehenderit. Minim aliquip aliqua Lorem enim. Enim ullamco occaecat quis sit enim pariatur aute non et. Anim nulla elit non officia. 
-                Esse dolor magna occaecat culpa incididunt enim consequat consectetur enim. Minim laboris incididunt exercitation irure proident velit nisi reprehenderit cillum laborum aute. Eu cupidatat dolore magna anim labore deserunt minim nostrud pariatur laborum elit eiusmod dolore. Enim id cillum ullamco sunt irure anim tempor ipsum ea. Eiusmod voluptate incididunt mollit reprehenderit nostrud Lorem pariatur ut dolore veniam.
-                </p>
+
+            <p id="aboutBio" className='darkgrey'>Hey there! I’m Andy and I’m a Web Developer. <br />
+                <br />
+                For the past 10 years I’ve been working in the audio industry doing all sorts of jobs from making music, live events, and 
+                post-production. Web Development was always an interest to me and I decided to pursue it by 
+                completing The Coding Bootcamp at The University of Texas in 2020. What a year to decide to do it! 
+                <br /> <br />
+                I currently live in Austin, Tx with my fiancé and our Mini Australian Shepherd, Hazel.
+
+            </p>
+
         </section>
 
         </CSSTransition>
