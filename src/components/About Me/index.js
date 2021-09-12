@@ -37,7 +37,9 @@ function About (props) {
                 I currently live in Austin, Tx with my fiancé and our Mini Australian Shepherd, Hazel.
 
             </p>
-
+            <br />
+            <p className='darkgrey'>Resume</p>
+            <a  href={require(`../../assets/AndySanchez_Resume.pdf`)} download><img src="https://img.icons8.com/ios/50/000000/resume.png"/></a>
         </section>
 
         </CSSTransition>
