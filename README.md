@@ -1,30 +1,23 @@
 
-# Andy Sanchez Portfolio
-[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
-## Description
-This is my personal portfolio which displays information about me, my projects, and how to contact me.
+<div align=center>
+    <h1>Andy Sanchez Portfolio</h1>
+ 
+Hey there! My name is Andy Sanchez and this is my personal portfolio. It's full
+of info about me and projects I've worked on!
+<br />
 [Portfolio](https://andysanchez726.github.io/react-portfolio/)
-
-![screenshot](./src/assets/portfolio-screenshot.png)
-## Table of Contents
-[Installation](#installation)
-
-[Usage](#usage)
-
-[Credits](#credits)
-
-[License](#license)
-
-[Tests](#tests)
-
-[Questions](#questions)
+</div>
 
 
+![screenshot](./src/assets/Portfolio-Screenshot.png)
 
-## Questions
+<div align=center>
+    <h1>Questions</h1>
+
 If you have any questions, here is a link to my github as well as my email address. Feel free to contanct me!
 
 [Github](github.com/andysanchez726 "My Github")
 
 [Email](andysanchez726@gmail.com "My Email")
   
+</div>
