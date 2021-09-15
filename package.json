@@ -13,7 +13,7 @@
     "react-scripts": "^3.4.3",
     "react-transition-group": "^4.4.1"
   },
-  "homepage": "https://andy-sanchez.com",
+  "homepage": "https://andysanchez726.github.io/react-portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
