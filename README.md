@@ -9,7 +9,7 @@ of info about me and projects I've worked on!
 </div>
 
 
-![screenshot](./src/assets/Portfolio-Screenshot.png)
+![screenshot](./src/assets/portfolio-screenshot.png)
 
 <div align=center>
     <h1>Questions</h1>
